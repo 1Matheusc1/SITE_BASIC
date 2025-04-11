@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mine_Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MENU PRINCIPAL -->
+    <header class="menu">
+      <div class="logo">🔥 Mine_Shop</div>
+      <input type="text" id="busca" placeholder="Busque seu produto..." />
+      <div class="icones">
+        <button id="conta">👤</button>
+        <button id="favoritos">⭐</button>
+        <button id="carrinho">🛍️</button>
+      </div>
+    </header>
+
+    <!-- MENU CATEGORIAS -->
+    <nav class="categorias">
+      <a href="#" data-categoria="TODOS">TODOS</a>
+      <a href="#" data-categoria="ACESSÓRIOS">ACESSÓRIOS</a>
+      <a href="#" data-categoria="BONÉS">BONÉS</a>
+      <a href="#" data-categoria="CALÇAS">CALÇAS</a>
+      <a href="#" data-categoria="CAMISETAS">CAMISETAS</a>
+      <a href="#" data-categoria="COLLABS">COLLABS</a>
+      <a href="#" data-categoria="CORTA VENTO">CORTA VENTO</a>
+      <a href="#" data-categoria="JAQUETAS">JAQUETAS</a>
+      <a href="#" data-categoria="OUTLET">OUTLET</a>
+      <a href="#" data-categoria="MOLETOM">MOLETOM</a>
+      <a href="#" data-categoria="BERMUDAS">BERMUDAS</a>
+    </nav>
+
+    <!-- DESTAQUE -->
+    <section class="destaque">
+      <img src="https://i.imgur.com/nPKv9Mv.png" alt="Camisetas Fire" />
+      <div class="info">
+        <button class="ver-mais" data-categoria="CAMISETAS">VER MAIS</button>
+      </div>
+    </section>
+
+    <!-- FAIXA DE FRETE GRÁTIS -->
+    <div class="frete-gratis">
+      <strong>FRETE GRÁTIS</strong> acima de <span class="valor">R$99,90</span>
+    </div>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="produtos"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
